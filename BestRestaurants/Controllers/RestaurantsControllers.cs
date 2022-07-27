@@ -5,7 +5,7 @@ using BestRestaurants.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BestRestaurants.Cont.Controllers
+namespace BestRestaurants.Controllers
 {
   public class RestaurantsController : Controller
   {
@@ -66,8 +66,8 @@ namespace BestRestaurants.Cont.Controllers
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
-      var thisItem = _db.Items.FirstOrDefault(item => item.ItemId == id);
-      _db.Items.Remove(thisItem);
+      var thisRestaurant = _db.Restaurants.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
+      _db.Restaurants.Remove(thisRestaurant);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
