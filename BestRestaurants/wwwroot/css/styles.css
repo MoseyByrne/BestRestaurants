@@ -10,7 +10,12 @@ div#footer {
 }
 
 body#body {
-  background-color: lavenderblush;
+  background-color: rgb(255, 234, 241);
+	background-image: radial-gradient(rgb(253, 200, 219), rgb(186, 220, 252), rgb(189, 253, 221), rgb(160, 160, 252), rgb(253, 200, 219), rgb(186, 220, 252), rgb(189, 253, 221), rgb(160, 160, 252), rgb(253, 200, 219), rgb(186, 220, 252), rgb(189, 253, 221), rgb(160, 160, 252), rgb(253, 200, 219), rgb(186, 220, 252), rgb(189, 253, 221), rgb(160, 160, 252));
+	padding-top: 15%;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 100%;
 }
 
 div#new {
